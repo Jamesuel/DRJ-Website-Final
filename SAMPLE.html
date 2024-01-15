@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> ewan ko</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--START-->
+    
+<div class="contain">
+    <div class="car">
+        <img src="sample1.jpg" alt="Cheater">
+        <div class="intro">
+            <h1> Tax Return <br> Preparation</h1>
+            <p> We <span> prepare </span> and review your tax returns as  required by BIR regulations.</p>
+        </div>
+    </div>
+<div class="car">
+        <img src="sample 2.jpg" alt="Cheater">
+        <div class="intro">
+            <h1>Refunds/Claims/ <br> Assessments</h1>
+            <p>If <span>you </span>are at a loss or feel that your tax
+            liabilities are out of control, we can represent 
+            you to challenge tax assessments, as well as process tax
+            refund claims or tax credits.</p>
+        </div>
+    </div>
+
+<div class="car">
+        <img src="sample3.jpg" alt="Cheater">
+        <div class="intro">
+            <h1> Professional <br>Representation</h1>
+            <p> We can represent you before the Bureau of Internal Revenue or Court
+                 of Tax Appeals for LOAs, Los, or tax appeals.</p>
+        </div>
+    </div>
+    <div class="car">
+        <img src="sample4.jpg" alt="Cheater">
+        <div class="intro">
+            <h1> Tax Health Check</h1>
+            <p>We conduct an in-depth review of the
+                 client's tax and accounting records to
+                 determine the level of compliance with
+                  relevant tax laws. We also recommend
+                   solutions to address potential tax
+                   exposures to improve compliance and eliminate risks. </p>
+        </div>
+    </div>
+
+        
+
+    </div>
+<!--END NG DIV-->
+
+</body>
+</html>
+
+
+<!--2nd CARD FLIP-->
+
+
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.contain{
+    display:flex;
+}
+.car{
+    height: 350px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgb(151, 176, 221);
+    overflow: hidden;
+}
+img{
+    height: 350px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.intro {
+    height: 130px;
+    width: 200px;
+    font-size: 80%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 70px;
+    background: rgb(27, 27, 27, 0.5);
+    color: white; /* Add this line to set the color to white */
+    transition: 0.5s;
+}
+
+
+
+
+
+.span {
+    font-weight: bold;
+    color: #007bff; /* Set a color for the span text */
+}
+
+body,
+h1,
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+.car:hover{
+    cursor: pointer;
+}
+.car:hover .intro {
+    height: 220px;
+    bottom: 220px;
+    background: rgb(47, 97, 235);
+}
+
+.car:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.car:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+
+
+
+
+
+
+</style>
