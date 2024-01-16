@@ -593,7 +593,7 @@ place-items: center;
 
 
 .drj-footer-container{
-    padding: 80px 200px;
+    padding: 80px 100px;
     display: inline-flex;
     gap: 80px;
     position: relative;
@@ -667,23 +667,37 @@ place-items: center;
 /*VML*/
 
 
-.vml-section{
-    background-color: #0000007a;
+.vml-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.616)), url('image/pexels-olia-danilevich-5466814.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.vml-section-title{
+    padding: 80px 0 90px;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color:#1476C1;
+    
 }
 
 .vml-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     margin-top: 125px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 23px;
+    font-size: 30px;
 }
 
 .vml-title span{
-    color: deepskyblue;
+    color: #1476C1;
 }
 
 .process-wrapper{
@@ -722,7 +736,7 @@ place-items: center;
 
 #progress-bar-container li.active::before,
 #progress-bar-container li:hover:before{
-    background: deepskyblue;
+    background: #1476C1;
 }
 #progress-bar-container li{
     list-style: none;
@@ -740,6 +754,9 @@ place-items: center;
     position: relative;
 }
 
+.step-inner{
+    font-weight: 700;
+}
 
 #progress-bar-container li .step-inner{
     position: absolute;
@@ -750,7 +767,7 @@ place-items: center;
 
 #progress-bar-container li.active,
 #progress-bar-container li:hover{
-    color: deepskyblue;
+    color: #1476C1;
 }
 
 
@@ -769,11 +786,11 @@ place-items: center;
 }
 
 #progress-bar-container li:hover::after{
-    background: deepskyblue;
+    background: #1476C1;
 }
 
 #progress-bar-container li:active::after{
-    background: deepskyblue;
+    background: #1476C1;
 }
 
 #progress-bar-container #line{
@@ -793,8 +810,8 @@ place-items: center;
     content: "";
     width: 0%;
     height: 100%;
-    background: deepskyblue;
-    background: linear-gradient(to right, deepskyblue 0%, #2ea3b7 100%);
+    background:#1476C1;
+    background: linear-gradient(to right, #1476C1 0%, #1476C1 100%);
     position: absolute;
 
     z-index: 2;
@@ -803,10 +820,10 @@ place-items: center;
 }
 
 #progress-content-section{
-    width: %;
+    width: 100%;
     margin: auto;
     background: #f3f3f3;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #progress-content-section .section-content{
@@ -850,11 +867,22 @@ place-items: center;
 }
 
 
-.vml-section-title{
-    padding: 100px 0 90px;
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
+
+
+.progress-content-title{
+    margin-bottom: 30px;
     font-weight: 800;
-    color: deepskyblue;
+    color: #000000c4;
+    font-size: 28px;
 }
+
+.progress-content-paragraph{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    width: 850px;
+    font-size: 17px;
+    color: #000000ad;
+}
+
+

@@ -13,7 +13,7 @@
 <!--Nav Section-->
     
 <header>
-    <a href="#" class="brand">DRJ BUSINESS CONSULTING </a> 
+    <a href="#" class="brand">DRJ</a> 
     <div class="menu-btn"></div>
     
     <div class="navigation">
@@ -111,9 +111,10 @@
     </div>
 
     <div class="taxsub">
-        <a>Our Tax Specialists assist companies and individuals navigate the complicated world of taxes. By understanding your business goals, we can find permanent resolutions to existing tax issues, legally avoid or reduce tax liabilities, eliminate tax related risks, and recommend action plans to address possible exposures, and ensure compliance.
+        <img src="aforce.webp" width="450" height="300">
+        <a><div>Our Tax Specialists assist companies and individuals navigate the complicated world of taxes. By understanding your business goals, we can find permanent resolutions to existing tax issues, legally avoid or reduce tax liabilities, eliminate tax related risks, and recommend action plans to address possible exposures, and ensure compliance.</div>
 
-            As we work together, you can rely on our extensive knowledge of tax legislation, as well as our accounting and auditing expertise to develop plans and programs that strategically addresses the future of your business.</a>
+            <div>As we work together, you can rely on our extensive knowledge of tax legislation, as well as our accounting and auditing expertise to develop plans and programs that strategically addresses the future of your business.</div></a>
     </div>
    
     
@@ -166,12 +167,38 @@
     </div>
 </div>
 
-<!--another set ng cards-->
+<!--PCAB-->
+<div class="pcab">
+    <h1 class="pcab-title">PCAB CONSULTING SERVICES</h1>
+</div>
+
+<!--BUSINESS REG-->
+
+<div class="business-reg">
+    <h1 class="pcab-title">BUSINESS REGISTRATION & COMPLIANCE</h1>
+</div>
+
+<div class="item-container">
+    <div class="round-item" onclick="showDescription('Item 1')">1</div>
+    <div class="round-item" onclick="showDescription('Item 2')">2</div>
+    <div class="round-item" onclick="showDescription('Item 3')">3</div>
+</div>
+<div id="description-container">
+    <p id="item-description">Click on an item to see its description.</p>
+</div>
+
+
+
+<!--footer section-->
 
 
     
 
 </body>
+
+
+
+
 
 </html>
 
@@ -217,7 +244,8 @@ header.sticky {
     font-size: 2em;
     margin-top: 20px;
     margin: 10px;
-    color: #0c38fc;
+    color:#0c72e7;
+    font-weight: 900;
 }
 .content-box{
     display: flex;
@@ -238,6 +266,7 @@ header.sticky {
     background: #fff;
     margin: 10px 4px;
     box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 .card i{
     margin: 20px;
@@ -255,50 +284,52 @@ header.sticky {
 .card:hover i,
 .card:hover p{
     color: #fff;
+    transition: ease 0.5s;
 }
 .card:hover h2{
-    font-weight: 600;
+    font-weight: 700;
+    color: white;
 }
 .card:nth-child(1):hover{
     background: linear-gradient(45deg,
-                                   rgba(116, 72, 187, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
+                                   rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
                                     url('bnw.jpg');
                                     background-size: cover;
 }
 .card:nth-child(2):hover{
     background: linear-gradient(45deg,
-                                   rgba(69, 25, 248, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
+    rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
                                     url('bnw.jpg');
                                     background-size: cover;
 }
 .card:nth-child(3):hover{
     background: linear-gradient(45deg,
-                                   rgba(69, 25, 248, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
+    rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
                                     url('bnw.jpg');
                                     background-size: cover;
 }
 .card:nth-child(4):hover{
     background: linear-gradient(45deg,
-                                   rgba(69, 25, 248, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
-                                    url('aforce.webp');
+    rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
+                                    url('bnw.jpg');
                                     background-size: cover;
 }
 .card:nth-child(5):hover{
     background: linear-gradient(45deg,
-                                   rgba(69, 25, 248, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
-                                    url('sample1.jpg ');
+    rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
+                                    url('bnw.jpg ');
                                     background-size: cover;
 }
 .card:nth-child(6):hover{
     background: linear-gradient(45deg,
-                                   rgba(69, 25, 248, 0.7) 0% ,
-                                   rgba(111, 159, 247, 0.7)100% ) ,
-                                    url('sample1.jpg');
+    rgba(0, 0, 0, 0.712) 0% ,
+                                   rgba(0, 50, 248, 0.068)100% ) ,
+                                    url('bnw.jpg');
                                     background-size: cover;
 }
 @media(max-width:991px){
@@ -327,7 +358,7 @@ header.sticky {
     font-size: 1em;
     color: #0c72e7;
     margin-left: 30%;
-    margin-top: 4%;
+    margin-top: 80px;
 }
 
 .taxsub {
@@ -335,8 +366,22 @@ header.sticky {
     margin: 50px 0;
     font-size: 1.2em;
     color: #121213;
-    margin-left: 50%;
+    margin-left: 0%;
     margin-top: 0%;
+    display: flex;
+    gap: 19px;
+}
+.taxsub a{
+    margin-top: 50px;
+    font-size: 17px;
+    text-align: center;
+    width: 500px;
+    font-weight: 600;
+    color: #12121396;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 545px;
 }
 
 .lagayan {
@@ -351,7 +396,7 @@ header.sticky {
 .lagayan .carnaman {
     max-width: 230px; /* Adjust the width as needed */
     height: 100px;
-    background: rgb(102, 48, 228);
+    background:#0c72e7;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
@@ -393,10 +438,67 @@ header.sticky {
 }
 
 .lagayan .carnaman .imgBx img {
-    width: 100%; /* Make sure the image takes the full width of the container */
+    width: 100%; 
     height: 140%; /* Maintain the aspect ratio */
     border-radius: 2px;
 }
+
+.pcab{
+    text-align: center;
+    margin: 90px 0;
+    font-size: 1em;
+    color: #0c72e7;
+    margin-left: 25%;
+    margin-top: 80px;
+}
+
+.business-reg{
+    text-align: center;
+    margin: 90px 0;
+    font-size: 1em;
+    color: #0c72e7;
+    margin-left: 14%;
+    margin-top: 40px;
+}
+
+
+
+/* item description */
+
+
+
+.item-container {
+    display: flex;
+}
+
+.round-item {
+    width: 50px;
+    height: 50px;
+    
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.round-item:hover {
+    background-color: #2980b9;
+}
+
+#description-container {
+    margin-top: 20px;
+}
+
+#item-description {
+    font-size: 18px;
+}
+
+
 
 
 
@@ -420,3 +522,11 @@ header.sticky {
         header.classList.toggle("sticky", window.scrollY > 0);
     });
 </script>
+
+<script>
+    function showDescription(description) {
+    document.getElementById('item-description').innerText = description;
+}
+
+</script>
+
