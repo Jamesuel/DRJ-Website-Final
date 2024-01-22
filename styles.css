@@ -886,3 +886,185 @@ place-items: center;
 }
 
 
+/*BUSINESS REG*/
+
+
+
+.contain{
+    display:flex;
+}
+.car{
+    height: 350px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgb(151, 176, 221);
+    overflow: hidden;
+}
+
+
+.car img{
+    height: 350px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.intro {
+    height: 130px;
+    width: 200px;
+    font-size: 80%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: rgb(27, 27, 27, 0.5);
+    color: white; /* Add this line to set the color to white */
+    transition: 0.5s;
+}
+
+
+
+.span {
+    font-weight: bold;
+    color: #007bff; /* Set a color for the span text */
+}
+
+body,
+h1,
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+.car .intro h1{
+    font-size: 22px;
+    margin-bottom: 28px;
+    margin-top: 0;
+    margin-left: 0;
+    color: white;
+}
+
+
+
+.car:hover{
+    cursor: pointer;
+}
+.car:hover .intro {
+    height: 220px;
+    bottom: 220px;
+    background: rgba(47, 97, 235, 0.822);
+}
+
+.car:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.car:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+
+
+
+
+
+/*bilog bilog*/
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.item-container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 998;
+    
+}
+
+.round-item {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.round-item:hover {
+    background-color: #050708; /* Dark background color on hover */
+    transition-duration: 0.3s; /* Adjust the transition duration */
+    
+}
+
+
+
+.round-item:nth-child(1) { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+.round-item:nth-child(2) { transform: rotate(50deg) translateX(100px) rotate(-50deg); }
+.round-item:nth-child(3) { transform: rotate(90deg) translateX(100px) rotate(-90deg); }
+.round-item:nth-child(4) { transform: rotate(130deg) translateX(100px) rotate(-130deg); }
+.round-item:nth-child(5) { transform: rotate(170deg) translateX(100px) rotate(-170deg); }
+.round-item:nth-child(6) { transform: rotate(210deg) translateX(100px) rotate(-210deg); }
+.round-item:nth-child(7) { transform: rotate(260deg) translateX(100px) rotate(-260deg); }
+.round-item:nth-child(8) { transform: rotate(310deg) translateX(100px) rotate(-310deg); }
+
+#description-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+#item-description {
+    font-size: 20px;
+    left: 50%;
+    top: 40%;
+      font-weight: bold; /* Add this line to make the text bold */
+      position: absolute;
+      color: white;
+      z-index: 998;
+}
+
+
+.business-reg-challenges{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+.challenges-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font: 19px;
+    margin-top: 17px;
+}
+
+.challenges-span{
+    color: #007bff;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*News*/
+
+

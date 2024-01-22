@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+            height: 4px;
+            background-color: #3498db; /* Blue color */
+            overflow: hidden;
+        }
+
+        .moving-thing {
+            width: 20px;
+            height: 20px;
+            background-color: white; /* Black color */
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            animation: moveThing 2s infinite alternate;
+        }
+
+        @keyframes moveThing {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="moving-thing"></div>
+    </div>
+</body>
+</html>
